@@ -3,7 +3,7 @@ class Song
   include Paramable
   extend Memorable::ClassMethods
   include Memorable::InstanceMethods
-  include Findable
+  extend Findable
   attr_accessor :name
   attr_reader :artist
 
